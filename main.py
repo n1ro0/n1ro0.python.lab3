@@ -11,5 +11,7 @@ def input_pyramid()-> list:
             pyramid[level].append(int(input("Input pyramid level {} element {}: ".format(level, element))))
     return pyramid
 
-ms = pathfinder.find_max_path(input_pyramid())
-print("Sum: {} Path: {}".format(ms[0], ms[1]))
+
+if __name__ == "__main__":
+    ms = pathfinder.find_max_path(input_pyramid())
+    print("Sum: {} Path: {}".format(ms[0], ms[1]))
