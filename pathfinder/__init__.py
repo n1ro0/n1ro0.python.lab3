@@ -56,5 +56,5 @@ def find_max_path(pyramid = default_pyramid) -> tuple:
                    used_path = True
         temp = new_temp
     max_path = max(temp, key=lambda t: t[0])
-    max_path[1] = " -> ".join(max_path[1])
+    max_path[1] = " -> ".join(max_path[1]) #Transforms path list into path str
     return max_path
